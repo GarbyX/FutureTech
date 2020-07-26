@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>.:: TOTAL SURFACE AREA CALCULATOR ::. </title>
+
+<style>
+
+body, #p1 {
+ color: lightskyblue;
+ background-color: #000;
+}
+
+h2, p, blockquote {
+  color: #fff;
+}
+
+marquee {
+  font-size: 6;
+  color: #ff00ff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <h2> .:: TOTAL SURFACE AREA CALCULATOR ::. </h2>
+
+    <p> 
+
+Task 1. <br><br>
+
+Write a program that calculates the Total Surface Area of a Cylinder. </p>
+
+ <blockquote> formula: 2πr<sup>2</sup> + 2πrh </blockquote>
+
+<p> Note: The input from keyboard (take π  = 3.142). <br> Where h = Cylinder height, r = radius
+
+<hr>
+
+ </p>
+
+<script>
+
+alert("A Program to calculate the Total Surface Area of a Closed Cylinder");
+
+var π = 3.142;
+
+var r = prompt("Enter radius (cm): ");
+var h = prompt("Enter height (cm): ");
+
+document.writeln("<h3> Data from User: </h3>"); 
+
+document.writeln("Radius: " + r + "cm <br>"); 
+document.writeln("Height: " + h + "cm <br>");
+
+var A1 = 2*π*(r*r) ;
+
+document.writeln("<h3> Calculation: </h3>"); 
+
+document.writeln("<i> Taking π = 3.142 </i> <br>");
+document.writeln("The Base Surface Area = 2 x 3.142 x " + r + "<sup>2</sup> = " + A1 + "cm<sup>2</sup><br>");
+
+var A2 = 2*π*r*h ;
+document.writeln("The Lateral Surface Area = 2 x 3.142 × " + r + " x " + h + " = " + A2 + "cm<sup>2</sup><br>");
+
+var A = A1 + A2;
+
+document.writeln("<hr color=yellow, width=60%><p id = 'p1'><b>The Total Surface Area of the Cylinder = Base Surface Area + Lateral Surface Area = </b></p>" + A + "cm<sup>2</sup> " );
+
+</script>
+
+<p>
+<marquee><i> Refresh page to perform another calculation <i></marquee>
+</p>
+
+</body>
+</html>
