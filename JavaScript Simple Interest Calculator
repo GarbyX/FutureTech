@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> HMFB&reg - Finance/Economics </title>
+
+<style>
+
+body {
+ color: #ffff00;
+ background-color: #000080;
+}
+
+h2, p, pre, blockquote {
+  color: #fff;
+}
+
+i {
+  color: lightgreen;
+}
+
+div {
+  width: 1000;
+  color: c0c0c0;
+} 
+
+div #sq {
+  width: 800;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div>
+<div id = "sq">
+    <h2> HMFB<sup>&reg</sup> Finance  </h2>
+
+    <p> 
+
+HMFB - Welcome to "Hammer Micro-Finance Bank".
+<br> 
+ ... helping you survive bad times. <br><br>
+
+<b> SIMPLE INTEREST CALCULATION GUIDELINES FOR NIGERIAN CITIZENS. </b>
+
+</p>
+
+ <blockquote> Formula: PRT/100 </blockquote>
+
+<p> Note: The input from keyboard. 
+<pre> 
+Where: 
+
+P is the Principal.
+R is the rate.
+T is the time.
+
+<hr>
+
+HMFB<sup>&reg</sup> Fixed Deposit rates as approved by CBN.
+
+2%: N200,000 - N499,999
+3%: N500,000 - N999,999
+4%: N1,000,000 - N9,999,999
+6%: N10,000,000 and above
+
+NB: Kindly speak to your Account Officer or any of our Staff to confirm current rates before making a capital investment.
+
+<hr></pre>
+ </p>
+
+    <!-- 
+<script src="js/index.js"></script>
+ -->
+
+<script>
+
+alert("HMFB Nig. Ltd.  \n Simple Interest Calculation");
+alert("Please enter only numbers or decimals. \n Symbols and Characters (* , : ; ! ? - + # @ /) are not allowed");
+
+var p = prompt("Enter Principal Amount (Currency: Naira): ");
+var r = prompt("Enter Rate (%): ");
+var t = prompt("Enter Time (in months): ");
+
+document.writeln("<h3> Current session data as received from registered User: </h3>"); 
+
+// var r = R/100;
+
+document.writeln("Principle: N" + p + "<br>"); 
+document.writeln("Rate: " + r + "% <br>");
+document.writeln("Time: " + t + "mth(s)<br>");
+
+document.writeln("<h3> Calculation: </h3>"); 
+var SI = (p*r*t)/100 ;
+document.writeln("Simple Interest = (N" + p + " x " + r  + " x " + t  + " ) ÷ 100 = N" + SI );
+
+document.writeln("<p> You will receive the sum of N" + SI/t + " into your bank account monthly until your investment period with HMFB<sup>&reg</sup> has elapsed. </p>");
+
+document.writeln("<p> Thank you for banking with us. </p>");
+
+</script>
+
+<p>
+<i> To perform another calculation kindly refresh page </i>
+</p>
+</div>
+</div>
+</body>
+</html>
